@@ -1,33 +1,37 @@
 {
-  "name": "enable3d-website",
+  "name": "enable3d-website-kr",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository contains the website <a href=\"https://enable3d.io/\"><b>enable3d.io</b></a>",
   "main": "index.js",
   "scripts": {
-    "start": "five-server",
-    "format": "prettier --write src/*.{html,js} src/{js,css,examples}/*"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build.dev": "webpack --mode development --config webpack.dev.js",
+    "start": "five-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enable3d/enable3d-website.git"
+    "url": "git+https://github.com/MrMoonKr/enable3d-website-kr.git"
   },
-  "author": "Yannick Deubel",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enable3d/enable3d-website/issues"
+    "url": "https://github.com/MrMoonKr/enable3d-website-kr/issues"
   },
-  "homepage": "https://github.com/enable3d/enable3d-website#readme",
+  "homepage": "https://github.com/MrMoonKr/enable3d-website-kr#readme",
   "dependencies": {
-    "@enable3d/ammo-on-nodejs": "^0.25.3",
-    "three": "^0.144.0"
+    "enable3d": "^0.25.4",
+    "three": "^0.162.0"
   },
   "devDependencies": {
-    "@yandeu/prettier-config": "^0.0.3",
-    "aws-sdk": "^2.819.0",
-    "express": "^4.17.1",
-    "five-server": "^0.1.1",
-    "mime": "^2.4.7",
-    "prettier": "^2.2.1",
-    "puppeteer": "^10.1.0"
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "five-server": "^0.3.2",
+    "html-webpack-plugin": "^5.6.0",
+    "rimraf": "^5.0.5",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2",
+    "webpack-glsl-loader": "^1.0.1"
   }
 }
